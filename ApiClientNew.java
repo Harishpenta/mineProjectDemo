@@ -23,7 +23,7 @@ public class ApiClientNew {
             OkHttpClient client = new OkHttpClient.Builder()
                     .connectTimeout(100, TimeUnit.SECONDS)
                     .readTimeout(100, TimeUnit.SECONDS).build();
-            retrofit = new Retrofit.Builder().baseUrl("http://192.168.1.121/ci/")
+            retrofit = new Retrofit.Builder().baseUrl("http://192.168.1.121/ci/")// Base Url Here
                     .client(client)
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                     .addConverterFactory(new ToStringConverterFactory())
